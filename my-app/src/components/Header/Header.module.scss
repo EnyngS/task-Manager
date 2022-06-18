@@ -1,0 +1,55 @@
+header{
+	height: 15vh;
+	position: sticky;
+	top: 0;
+	background-color: rgba(0, 46, 48, 0.93);
+
+	.content {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		height: 100%;
+		max-width: 1250px;
+		margin: 0 auto;
+	.boxBtn {
+		display: flex;
+		align-items: center;
+		margin: 0 20px;
+		select{
+			border: none;
+			background: none;
+			outline: none;
+			font-weight: 100;
+			font-size: 20px;
+			line-height: 17px;
+			margin: 0 20px;
+			color: rgba(255, 174, 0, 0.859);
+		}
+		
+	}
+	.welBtn {
+		display: flex;
+		border: none;
+		background-color: rgba(255, 174, 0, 0.859);
+		border-radius: 10px;
+		width: max-content;
+		height: max-content;
+		padding: 10px 50px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 100;
+		outline: none;
+		margin: 0 5px;
+		&:hover {
+			background-color: rgba(217, 217, 217, 0.264);
+		}
+	}
+	}
+}
+.scroll{
+	transition: all 1s;
+	background:rgba(101, 70, 3, 0.519);
+	box-sizing: border-box;
+	box-shadow: 0 0 5px #000;
+  }

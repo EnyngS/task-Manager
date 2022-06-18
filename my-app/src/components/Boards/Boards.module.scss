@@ -1,0 +1,69 @@
+.wrapper {
+  padding: 0px 0 20px;
+  margin: 0 auto;
+}
+.btn {
+  display: flex;
+  font-size: 24px;
+  border: none;
+  background-color: rgba(255, 174, 0, 1);
+  border-radius: 0 0 10px 10px;
+  width: max-content;
+  height: max-content;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  //   font-weight: 100;
+  outline: none;
+  margin: 0 auto 30px;
+  transition: all 0.5s;
+  //   margin: 10px 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(91, 172, 140);
+    transition: all 0.5s;
+  }
+}
+
+.boards {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 400px;
+
+    margin: 20px;
+    border-radius: 10px;
+
+    background: url('../../common/img/setka.png') center / auto no-repeat, rgb(91, 172, 140);
+    background-size: auto;
+
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+
+    &:hover {
+      transition: all 0.5s;
+      transform: rotate(-6deg);
+    }
+    .close {
+      margin: 5px 5px 5px auto;
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+  }
+  &__desc {
+    max-width: 180px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}

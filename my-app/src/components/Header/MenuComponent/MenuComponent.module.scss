@@ -1,0 +1,112 @@
+.menuWrapp{
+	display: flex;
+	height: 35px;
+	width: 35px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	user-select: none;
+
+	.line{
+		position: relative;
+		height: 5px;
+		width: 100%;
+		background-color: #fff;
+	}
+	.line::before,
+	.line::after{
+		content: "";
+		height: 5px;
+		width: 100%;
+		background-color: #fff;
+		position: absolute;
+	}
+	.line::before{
+		top: 10px;
+	}
+	.line::after{
+		top: -10px;
+	}
+	.menu{
+		display: flex;
+		flex-direction: row-reverse;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100vh;
+		width: 100vw;
+		background-color: rgba(35, 31, 22, 0.442);
+		margin: 0;
+		padding: 0;
+		z-index: 20000 !important;
+		.close{
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 30px;
+			width: 30px;
+			margin: 10px;
+			z-index: 30;
+		}
+		.close::before,
+		.close::after{
+			content: '';
+			position: absolute;
+			top:13px;
+			height: 3px;
+			width: 100%;
+			background-color: #000;
+			transform: rotate(45deg);
+		}
+		.close::after{
+			transform: rotate(-45deg);
+		}
+		.close:hover{
+			transform: scale(1.1);
+		}
+
+		.menuListWrapp{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #fff;
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				padding: 5px 70px;
+				background-color: rgba(255, 174, 0, 0.859);
+				.welBtn {
+					display: flex;
+					border: none;
+					border-radius: 10px;
+					width: max-content;
+					height: max-content;
+					padding: 10px 50px;
+					text-decoration: none;
+					text-transform: uppercase;
+					color: #fff;
+					font-weight: 100;
+					outline: none;
+					margin: 0 5px;
+				}
+				
+			}
+			li:last-child{
+				margin-top: 100px;
+			}
+			li:hover{
+				transition: all .2s;
+				background-color: rgb(255, 174, 0);
+			}
+		}
+	}
+}
+.menuWrapp:hover>.line::before,
+.menuWrapp:hover>.line,
+.menuWrapp:hover>.line::after{
+	transition: all .3s;
+	background-color: rgba(255, 174, 0, 0.859);
+}

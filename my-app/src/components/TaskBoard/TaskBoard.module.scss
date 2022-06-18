@@ -1,0 +1,119 @@
+.taskWrapp {
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  height: 67.2vh;
+  width: 100%;
+  .tabelBoard {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    .cellWrapp {
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        width: 12px; /* width of the entire scrollbar */
+      }
+
+      &::-webkit-scrollbar-track {
+        //   background: orange; /* color of the tracking area */
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(241, 69, 83); /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */
+        border: 3px solid orange; /* creates padding around scroll thumb */
+      }
+      overflow-y: auto;
+      // display: flex;
+      // flex-direction: column;
+      width: 300px;
+      height: 100%;
+      box-shadow: 0 0 2px rgb(142, 139, 139);
+      background-color: #fff;
+      position: relative;
+      border: 1px solid #000;
+      margin: 10px;
+
+      h4 {
+        background-color: rgb(91, 172, 140);
+        text-align: center;
+        font-size: 24px;
+        line-height: 17px;
+        font-weight: 600;
+        font-style: italic;
+        border-bottom: 1px solid #000;
+        margin: 0;
+        padding: 10px 0;
+      }
+      .element {
+        &:hover {
+          background-color: rgb(91, 172, 140);
+        }
+        h5 {
+          margin: 0;
+          padding: 0 0 5px 0;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          font-style: italic;
+        }
+        //   height: 300px;
+        max-width: 100%;
+        flex: 1 1 auto;
+        margin: 5px;
+        min-height: max-content;
+        position: relative;
+        padding: 10px 20px;
+        background-color: rgba(252, 125, 14, 0.708);
+        border-radius: 15px;
+        box-shadow: 0 0 2px rgba(252, 125, 14, 0.708);
+        cursor: move;
+
+        div {
+          font-size: 16px;
+          font-weight: 500;
+          width: 250px;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+.close {
+  right: 5px;
+  top: 5px;
+  position: absolute;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.wrap_btn {
+  display: flex;
+  justify-content: left;
+}
+.btn {
+  flex: 0 1 auto;
+  display: flex;
+  font-size: 20px;
+  border: none;
+  background-color: rgba(255, 174, 0, 1);
+  border-radius: 10px;
+  width: max-content;
+  height: max-content;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  //   font-weight: 100;
+  outline: none;
+  margin: 15px;
+  //   margin: 0 auto 30px;
+  transition: all 0.5s;
+  //   margin: 10px 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(91, 172, 140);
+    transition: all 0.5s;
+  }
+}
